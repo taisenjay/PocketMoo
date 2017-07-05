@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/icon_thunder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_thunder"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_toRightOf="@+id/icon_thunder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="JAY-001"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_file_info"
+        android:layout_toRightOf="@+id/icon_thunder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.81G / 2017-07-01"
+        android:layout_below="@+id/tv_file_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

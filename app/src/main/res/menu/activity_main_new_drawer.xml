@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_hot_videos"
+            android:checked="true"
+            android:icon="@drawable/ic_brightness_high_black_24dp"
+            android:title="@string/hot_movies"/>
+        <item
+            android:id="@+id/nav_all_videos"
+            android:checked="true"
+            android:icon="@drawable/ic_flight_takeoff_black_24dp"
+            android:title="@string/good_movies"/>
+
+        <item
+            android:id="@+id/nav_girls"
+            android:icon="@drawable/ic_sentiment_very_satisfied_black_24dp"
+            android:title="@string/girls"/>
+
+        <!--<item-->
+            <!--android:id="@+id/nav_news"-->
+            <!--android:icon="@drawable/ic_chrome_reader_mode_black_24dp"-->
+            <!--android:title="@string/news"/>-->
+        <item
+            android:id="@+id/nav_my_movies"
+            android:icon="@drawable/ic_developer_board_black_24dp"
+            android:title="@string/my_movies"/>
+        <item
+            android:id="@+id/nav_my_girls"
+            android:icon="@drawable/ic_accessibility_black_24dp"
+            android:title="@string/my_girls"/>
+    </group>
+
+    <item android:title="@string/more">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_feedback"-->
+                <!--android:icon="@drawable/ic_email_black_24dp"-->
+                <!--android:title="@string/feedback"/>-->
+            <item
+                android:id="@+id/nav_update"
+                android:icon="@drawable/ic_file_upload_black_24dp"
+                android:title="@string/update"/>
+        </menu>
+    </item>
+
+</menu>

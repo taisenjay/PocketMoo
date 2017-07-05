@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    tools:context="com.taisenjay.pocketmoo.ui.SearchTorrentActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:minHeight="?actionBarSize"
+        android:paddingTop="10dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/torrent_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:imeOptions="actionSearch"
+            app:defaultQueryHint="@string/search_torrent_hint"/>
+    </android.support.v7.widget.Toolbar>
+    
+    <com.taisenjay.pocketmoo.loadingdrawable.LoadingView
+        android:id="@+id/loading_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        app:loading_renderer="WaterBottleLoadingRenderer"/>
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_torrents"/>
+
+    <!--<ImageView-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/iv_empty"-->
+        <!--android:src="@mipmap/empty"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+</LinearLayout>

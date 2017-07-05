@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_search_torrent" android:title="@string/tsearch" app:showAsAction="never"/>
+    <item android:id="@+id/menu_add_to_mine" android:title="@string/insert_movie" app:showAsAction="never"/>
+</menu>

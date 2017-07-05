@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taisenjay.pocketmoo.ui.HtmlReadActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:minHeight="?actionBarSize"
+        android:paddingTop="10dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+    </android.support.v7.widget.Toolbar>
+
+    <com.taisenjay.pocketmoo.loadingdrawable.LoadingView
+        android:id="@+id/loading_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        app:loading_renderer="WaterBottleLoadingRenderer"/>
+
+    <com.google.android.gms.ads.NativeExpressAdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adUnitId="ca-app-pub-8800040129375841/3595980415"
+        app:adSize="350x100">
+    </com.google.android.gms.ads.NativeExpressAdView>
+
+    <WebView
+        android:id="@+id/wv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+</LinearLayout>
